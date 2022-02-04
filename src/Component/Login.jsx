@@ -156,12 +156,13 @@ const Login = () => {
           <button
             style={{
               borderRadius: "5px",
-              padding: "10px",
+              padding: "14px",
               outline: "none",
               border: "none",
               backgroundColor: "#142850",
               color: "#fff",
               width: "100%",
+              'cursor': 'pointer',
             }}
             onClick={handleSubit}
           >

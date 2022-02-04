@@ -408,6 +408,7 @@ const Register = () => {
               border: "none",
               backgroundColor: "#142850",
               color: "#fff",
+              'cursor': 'pointer',
             }} onClick={handleSubit}>
               SUBMIT
             </button>
