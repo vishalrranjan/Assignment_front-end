@@ -28,7 +28,6 @@ const Register = () => {
       ...userInfo,
       [inputName]: inputValue,
     };
-    console.log(userData);
     setUserInso(userData);
   };
 
@@ -49,26 +48,27 @@ const Register = () => {
   };
 
   useEffect(() => {
-    console.log({ registerResponse });
     registerResponse && window.location.replace("/welcome");
   }, [registerResponse]);
+
   const bgImg = {
     "background-image": `url(${bg})`,
     "background-color": "#fff",
-    'min-height': "100vh",
+    "min-height": "100vh",
     "background-position": "center",
     " background-repeat": "no-repeat",
     "background-size": "cover",
-     "background-attachment": 'fixed',
+    "background-attachment": "fixed",
     display: "flex",
     "align-items": "center",
     "justify-content": "content",
     "flex-direction": "column",
   };
+
   const formWrap = {
     "background-color": "rgba(255, 255, 255, 0.9)",
     "border-radius": "10px",
-    
+
     margin: "30px auto",
     display: "flex",
     "align-items": "center",
@@ -76,6 +76,7 @@ const Register = () => {
     "flex-direction": "column",
     padding: "30px",
   };
+
   return (
     <div style={bgImg}>
       <div className="RegisterFormWrap" style={formWrap}>
@@ -107,7 +108,7 @@ const Register = () => {
           Aloha, welcome to Hawai Action Services <br />
           Continue logging into your account.
         </p>
-        <div className="FormInputCstWrap" style={{'width' : '100%'}}>
+        <div className="FormInputCstWrap" style={{ width: "100%" }}>
           <div style={{ width: "100%", marginTop: "20px" }}>
             <label
               style={{ display: "block", fontSize: "14px", fontWeight: "500" }}
@@ -123,16 +124,16 @@ const Register = () => {
               onChange={handleInput}
               placeholder="Enter your first name"
               autoComplete="off"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -150,16 +151,16 @@ const Register = () => {
               onChange={handleInput}
               placeholder="Enter your last name"
               autoComplete="off"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -177,16 +178,16 @@ const Register = () => {
               onChange={handleInput}
               placeholder="Enter your last name"
               autoComplete="off"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -204,16 +205,16 @@ const Register = () => {
               onChange={handleInput}
               placeholder="Enter your email address"
               autoComplete="off"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -231,16 +232,16 @@ const Register = () => {
               onChange={handleInput}
               placeholder="Enter your phone number"
               autoComplete="off"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -257,16 +258,16 @@ const Register = () => {
               value={userInfo.password}
               onChange={handleInput}
               placeholder="Enter your password"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -283,16 +284,16 @@ const Register = () => {
               value={userInfo.country}
               onChange={handleInput}
               placeholder="Enter your password"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -309,16 +310,16 @@ const Register = () => {
               value={userInfo.state}
               onChange={handleInput}
               placeholder="Enter your password"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -335,16 +336,16 @@ const Register = () => {
               value={userInfo.city}
               onChange={handleInput}
               placeholder="Enter your password"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -361,16 +362,16 @@ const Register = () => {
               value={userInfo.address1}
               onChange={handleInput}
               placeholder="Enter your password"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
           <div style={{ width: "100%", marginTop: "20px" }}>
@@ -387,32 +388,43 @@ const Register = () => {
               value={userInfo.zip}
               onChange={handleInput}
               placeholder="Enter your password"
-            style={{
-              outline: "none",
-              width: "100%",
-              boxSizing: "border-box",
-              padding: "12px 10px",
-              marginBottom: "15px",
-              backgroundColor: "transparent",
-              border: "none",
-              borderBottom: "1px solid #303030",
-            }}
+              style={{
+                outline: "none",
+                width: "100%",
+                boxSizing: "border-box",
+                padding: "12px 10px",
+                marginBottom: "15px",
+                backgroundColor: "transparent",
+                border: "none",
+                borderBottom: "1px solid #303030",
+              }}
             />
           </div>
         </div>
-          <div  style={{ marginTop: "30px", 'display': 'flex', 'alignItems': 'column', 'flexDirection': 'column', 'justifyContent': 'center' }}>
-            <button  style={{
+        <div
+          style={{
+            marginTop: "30px",
+            display: "flex",
+            alignItems: "column",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <button
+            style={{
               borderRadius: "5px",
               padding: "14px 30px",
               outline: "none",
               border: "none",
               backgroundColor: "#142850",
               color: "#fff",
-              'cursor': 'pointer',
-            }} onClick={handleSubit}>
-              SUBMIT
-            </button>
-             <div
+              cursor: "pointer",
+            }}
+            onClick={handleSubit}
+          >
+            SUBMIT
+          </button>
+          <div
             style={{
               display: "flex",
               alignItems: "center",
@@ -431,7 +443,7 @@ const Register = () => {
               Already have an account ?
             </p>
             <Link
-              to="/register"
+              to="/"
               style={{
                 fontSize: "14px",
                 textDecoration: "none",
@@ -442,7 +454,7 @@ const Register = () => {
               Login <span style={{ color: "#00A8CC" }}>here</span>
             </Link>
           </div>
-          </div>
+        </div>
       </div>
     </div>
   );

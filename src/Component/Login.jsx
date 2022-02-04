@@ -18,7 +18,6 @@ const Login = () => {
       ...loginInfo,
       [inputName]: inputValue,
     };
-    console.log(loginData);
     setLoginInfo(loginData);
   };
 
@@ -37,11 +36,9 @@ const Login = () => {
       .then((err) => {
         alert(err);
       });
-    console.log(loginInfo);
   };
 
   useEffect(() => {
-    console.log({ loginResponse });
     loginResponse && window.location.replace("/welcome");
   }, [loginResponse]);
 
@@ -56,6 +53,7 @@ const Login = () => {
     "align-items": "center",
     "justify-content": "content",
   };
+
   const formWrap = {
     "background-color": "rgba(255, 255, 255, 0.9)",
     "border-radius": "10px",
@@ -162,7 +160,7 @@ const Login = () => {
               backgroundColor: "#142850",
               color: "#fff",
               width: "100%",
-              'cursor': 'pointer',
+              cursor: "pointer",
             }}
             onClick={handleSubit}
           >
