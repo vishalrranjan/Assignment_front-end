@@ -1,28 +1,41 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: #efefef;
 }
 
-.wrapper {
-  height: 100vh;
-}
-.sub-heading {
-  display: inline;
-}
-.logout-btn {
-  background-color: transparent;
+::-webkit-input-placeholder { /* Edge */
+    font-weight: 600;
+    color: #333333;
 }
 
-@media screen and (max-width: 550px) {
-  .sub-heading {
-    color: blue;
-    text-align: center;
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-weight: 600;
+    color: #333333;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: #333333;
+}
+.LoginFormWrap{
+  width:500px;
   }
-  .login-col {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.RegisterFormWrap{
+  width:60vw;
+  }
+  .FormInputCstWrap{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  }
+@media screen and (max-width: 768px) {
+  .LoginFormWrap{
+  width: 80vh;
+  }
+  .RegisterFormWrap{
+  width: 80vh;
+  }
+    .FormInputCstWrap{
+  grid-template-columns: repeat(1, 1fr);
   }
 }
